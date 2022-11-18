@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>aspnetcore_n_tier.Test</RootNamespace>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="Moq" Version="4.16.1" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\aspnetcore-n-tier.BLL\aspnetcore-n-tier.BLL.csproj" />
+    <ProjectReference Include="..\aspnetcore-n-tier.DAL\aspnetcore-n-tier.DAL.csproj" />
+    <ProjectReference Include="..\aspnetcore-n-tier.DTO\aspnetcore-n-tier.DTO.csproj" />
+    <ProjectReference Include="..\aspnetcore-n-tier.Utility\aspnetcore-n-tier.Utility.csproj" />
+  </ItemGroup>
+
+</Project>
